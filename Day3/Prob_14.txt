@@ -1,0 +1,15 @@
+14. Data analysis / manipulation (Awk)
+
+i)
+	a)$ cat data.csv | awk '$4>10000 {print $2 "  " $7}'
+	b)$ cat data.csv | grep -vi employeename | awk '$4>10000 {print $2 "  " $7}'
+
+ii)
+	a)$ cat data.csv | grep -i captain 
+	b)$ cat data.csv | grep -i captain | awk '{sum+=$7} END{print sum}'
+
+iii)
+	$  cat data.csv | awk '7000<$5 && $5<10000 {print $1 "  " $2 "  " $3 "  " $5}'
+
+iv)
+	$ cat data.csv | awk '{sum+=$4} END{print sum/NR}'

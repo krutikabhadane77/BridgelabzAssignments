@@ -1,0 +1,5 @@
+7. Print list of web response code count in the unique sorted order at specific hours
+
+a) $cat var/log/httpd/access.log
+b & c) $cat var/log/httpd/access.log | awk '{print $2}' | sort -nr | wc -l
+c) $cat var/log/httpd/access.log | sort | uniq | awk '{print $8}' | tail -4

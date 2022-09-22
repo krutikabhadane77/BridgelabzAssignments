@@ -1,0 +1,3 @@
+8. Print list of last 10 unique client IP from /var/log/httpd/access.log
+
+d) $awk '{ print $1 } ' access.log | sort | uniq | head -4

@@ -1,0 +1,3 @@
+12. Find a word systemd from all files in the folder.
+
+$grep -o -i systemd access.log | wc -l

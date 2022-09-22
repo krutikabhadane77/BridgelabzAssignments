@@ -1,0 +1,9 @@
+15. Find the diffrence bet original and updated file. 
+
+a) mkdir original updated
+b)  cp original-file.sh /original
+    cp original-file.sh /updated
+
+c) diff -qr original/ updated/
+d) cp original /-R/original-backup
+e) diff -qr updated/-r/original-backup

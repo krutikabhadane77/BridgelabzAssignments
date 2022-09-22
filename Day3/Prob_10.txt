@@ -1,0 +1,13 @@
+10. Execute command hello and ls and check the execution status
+
+a) Execute hello command at command promt
+   $echo hello
+
+b) Check execution status hello command
+   $echo hello $?
+
+c) Execute ls command at command promt
+   $ls
+
+d) Check execution status ls command
+   $echo ls $?

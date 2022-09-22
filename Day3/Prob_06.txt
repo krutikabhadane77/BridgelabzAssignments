@@ -1,0 +1,7 @@
+6. Print last 4 frequently access inique urls at particular hours from /var/log/httpd/access.log
+ 
+
+a) $cat /var/log/httpd/access.log
+b) $cat var/log/httpd/access.log | awk -F/ '{print NR "/" $4}'
+c) $cat /var/log/httpd/access.log | sort | uniq | awk -F/ '{print NR "/" $4}' | wc -l
+d) $cat var/log/httpd/access.log | sort | uniq | awk '{print NR "/" $8}' | tail -4

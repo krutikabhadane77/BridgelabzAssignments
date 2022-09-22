@@ -1,0 +1,13 @@
+Print last 4 frequently aceess urls count in sorted order from /var/log/httpd/access.log
+
+a) View /var/log/httpd/access.log
+   $cat /var/log/httpd/access.log
+
+b) Print field which has urls data.
+   $cat /access.log | awk -F/ '{print NR "/" $8}'
+
+c) Sort extracted urls and count it.
+   $cat /var/log/httpd/access.log | uniq | sort -n | awk -F/ '{print NR "/" $8}' | wc -l
+
+d) Print 4 unique urls.
+   $cat access.log | uniq | sort -n | awk -F/ '{print NR "/" $8}' | tail -4
